@@ -1,0 +1,38 @@
+---
+import "../styles/tailwind.css";
+import MessageForm from "../components/MessagesForm.astro";
+import PhonePuzzle from "../components/PhonePuzzle.astro";
+import AppointmentDetails from "../components/AppointmentDetails.astro";
+import SoundPlayer from "../components/SoundPlayer.astro"
+---
+
+<html class="bg-gray-100 h-full">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ubicación</title>
+    </head>
+    <body class="flex flex-col items-center p-8 space-y-8 gradient-bg">
+        <h1 class="text-2xl font-bold">Ubicación</h1>
+
+        <!-- Ejemplo de iframe con Google Maps (usa cualquier ubicación) -->
+        <div class="w-full max-w-lg mx-auto">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.445119629995!2d-75.62150232418651!3d4.864836840211051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3883d048094ad9%3A0x1b7fd67b11809482!2sCampoalegre%20Bailador%20Restaurante%20Cafe%20Bar%20Santa%20Rosa%20De%20Cabal!5e0!3m2!1ses-419!2sco!4v1734703469844!5m2!1ses-419!2sco"
+                class="w-full h-96 border-0 rounded-lg shadow-lg"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <AppointmentDetails />
+
+        <MessageForm />
+
+        <PhonePuzzle />
+
+        <SoundPlayer />
+
+    </body>
+</html>

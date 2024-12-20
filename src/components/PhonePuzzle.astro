@@ -1,0 +1,41 @@
+---
+const fullPhone = "3104690994";
+const hint = "+1234xxxxxx"; // Pista parcial
+---
+<div class="bg-white p-4 rounded shadow w-full max-w-md mt-8" style="transition: opacity 0.3s;">
+  <h2 class="text-xl font-semibold mb-2">Escribe el número completo luego de descifrar el número 10</h2>
+  <p class="mb-4">"Soy los puntos cardinales que guían al viajero por el mundo. ¿Qué número soy?"</p>
+  
+  <input 
+    id="phoneGuess" 
+    type="text" 
+    placeholder="Escribe el número completo" 
+    class="border p-2 rounded w-full mb-2"
+  />
+  <button 
+    id="checkPhoneBtn"
+    class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+  >
+    Verificar
+  </button>
+  <div id="phoneResult" class="mt-4 text-sm text-red-500"></div>
+
+  <!-- Script para manejar el evento de clic -->
+  <script>
+    document.getElementById('checkPhoneBtn').addEventListener('click', () => {
+      const fullPhone = "3104690994";
+      const inputVal = document.getElementById('phoneGuess').value.trim();
+      const resultDiv = document.getElementById('phoneResult');
+
+      if (inputVal === fullPhone) {
+        resultDiv.innerHTML = `
+          <a href="https://wa.me/${fullPhone}" target="_blank" class="bg-teal-500 text-white py-2 px-4 rounded hover:bg-teal-600 inline-block mt-2">
+            Abrir WhatsApp
+          </a>
+        `;
+      } else {
+        resultDiv.textContent = "Número incorrecto. Inténtalo de nuevo.";
+      }
+    });
+  </script>
+</div>

@@ -1,0 +1,29 @@
+---
+const appointmentTime = "18:00 hrs";
+const contactPerson = "Héctor Cardona";
+const locationName = "Campoalegre Bailador Restaurante";
+const notes = "Estaré vestido con una camiseta beige";
+---
+
+<div class="bg-white p-4 rounded shadow w-full max-w-md mt-8">
+  <h2 class="text-xl font-semibold mb-2">Detalles de la Cita</h2>
+  
+  <dl class="text-gray-700 space-y-2">
+    <div>
+      <dt class="font-medium">Lugar:</dt>
+      <dd>{locationName}</dd>
+    </div>
+    <div>
+      <dt class="font-medium">Hora de llegada:</dt>
+      <dd>{appointmentTime}</dd>
+    </div>
+    <div>
+      <dt class="font-medium">Persona de contacto:</dt>
+      <dd>{contactPerson}</dd>
+    </div>
+    <div>
+      <dt class="font-medium">Notas adicionales:</dt>
+      <dd>{notes}</dd>
+    </div>
+  </dl>
+</div>
