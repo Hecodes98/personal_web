@@ -1,0 +1,27 @@
+<!DOCTYPE html><html class="bg-gray-100 h-full"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ubicación</title><link rel="stylesheet" href="/_astro/index.VaXp7pf8.css"></head> <body class="flex flex-col items-center p-8 space-y-8 gradient-bg"> <h1 class="text-2xl font-bold">Ubicación</h1> <!-- Ejemplo de iframe con Google Maps (usa cualquier ubicación) --> <div class="w-full max-w-lg mx-auto"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.445119629995!2d-75.62150232418651!3d4.864836840211051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3883d048094ad9%3A0x1b7fd67b11809482!2sCampoalegre%20Bailador%20Restaurante%20Cafe%20Bar%20Santa%20Rosa%20De%20Cabal!5e0!3m2!1ses-419!2sco!4v1734703469844!5m2!1ses-419!2sco" class="w-full h-96 border-0 rounded-lg shadow-lg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe> </div> <div class="bg-white p-4 rounded shadow w-full max-w-md mt-8"> <h2 class="text-xl font-semibold mb-2">Detalles de la Cita</h2> <dl class="text-gray-700 space-y-2"> <div> <dt class="font-medium">Lugar:</dt> <dd>Campoalegre Bailador Restaurante</dd> </div> <div> <dt class="font-medium">Hora de llegada:</dt> <dd>18:00 hrs</dd> </div> <div> <dt class="font-medium">Persona de contacto:</dt> <dd>Héctor Cardona</dd> </div> <div> <dt class="font-medium">Notas adicionales:</dt> <dd>Estaré vestido con una camiseta beige</dd> </div> </dl> </div> <div class="bg-white p-4 rounded shadow w-full max-w-md"> <h2 class="text-xl font-semibold mb-2">Si tienes alguna consideracion, puedes dejarla aquí, me llegará el mensaje al servidor y lo tendré en cuenta</h2> <form action="https://eoxu5wo34c749vl.m.pipedream.net/" method="POST" class="flex flex-col space-y-4"> <textarea name="mensaje" rows="4" class="border p-2 rounded w-full" placeholder="Escribe tu mensaje aquí..."></textarea> <button type="submit" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 self-end">
+Enviar
+</button> </form> </div> <script type="module">document.getElementById("messageForm").addEventListener("submit",async e=>{e.preventDefault();const t=e.target,o=new FormData(t).get("mensaje"),a=await fetch("https://eoxu5wo34c749vl.m.pipedream.net/",{method:"POST",body:JSON.stringify({mensaje:o}),headers:{"Content-Type":"application/json"}}),n=document.getElementById("formStatus");a.ok?(n.textContent="¡Mensaje enviado correctamente!",t.reset()):n.textContent="Hubo un error. Inténtalo de nuevo."});</script> <div class="bg-white p-4 rounded shadow w-full max-w-md mt-8" style="transition: opacity 0.3s;"> <h2 class="text-xl font-semibold mb-2">Escribe el número completo luego de descifrar el número 10</h2> <p class="mb-4">"Soy los puntos cardinales que guían al viajero por el mundo. ¿Qué número soy?"</p> <input id="phoneGuess" type="text" placeholder="Escribe el número completo" class="border p-2 rounded w-full mb-2"> <button id="checkPhoneBtn" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+Verificar
+</button> <div id="phoneResult" class="mt-4 text-sm text-red-500"></div> <!-- Script para manejar el evento de clic --> <script type="module">document.getElementById("checkPhoneBtn").addEventListener("click",()=>{const e="3104690994",n=document.getElementById("phoneGuess").value.trim(),t=document.getElementById("phoneResult");n===e?t.innerHTML=`
+          <a href="https://wa.me/${e}" target="_blank" class="bg-teal-500 text-white py-2 px-4 rounded hover:bg-teal-600 inline-block mt-2">
+            Abrir WhatsApp
+          </a>
+        `:t.textContent="Número incorrecto. Inténtalo de nuevo."});</script> </div> <div class="w-full max-w-md mt-8"> <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1775758494&color=%237c969c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" class="rounded shadow">
+    </iframe> <div style="
+        font-size: 10px; 
+        color: #cccccc;
+        line-break: anywhere;
+        word-break: normal;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; 
+        font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+        font-weight: 100;
+      "> <a href="https://soundcloud.com/hector-julian-cardona-montoya" title="Hector Julian Montoya" target="_blank" style="color: #cccccc; text-decoration: none;">
+Hector Julian Montoya
+</a>
+·
+<a href="https://soundcloud.com/hector-julian-cardona-montoya/quicksession-4" title="QuickSession #4" target="_blank" style="color: #cccccc; text-decoration: none;">
+QuickSession #4
+</a> </div> </div> </body></html>

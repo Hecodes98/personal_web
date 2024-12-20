@@ -1,0 +1,15 @@
+<!DOCTYPE html><html class="bg-gray-100 h-full"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Autenticación</title><link rel="stylesheet" href="/_astro/index.VaXp7pf8.css"></head> <body class="flex items-center justify-center h-screen gradient-bg"> <div class="bg-white p-8 rounded shadow w-full max-w-sm"> <h1 class="text-2xl font-bold mb-4">Ingresa los números que has descifrado</h1> <input id="clave" type="password" placeholder="Ingrese la clave" class="border p-2 w-full mb-4"> <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 w-full" onclick="
+        const input = document.getElementById('clave');
+        if(input.value === '310469099') {
+          if (document.startViewTransition) {
+            document.startViewTransition(() => {
+              window.location.href = '/location';
+            });
+          } else {
+            window.location.href = '/location';
+          }
+        } else {
+          alert('Clave incorrecta');
+        }">
+Acceder
+</button> </div> </body></html>
